@@ -352,10 +352,16 @@ MIT
 
 @angular/material/dialog
 
+@angular/material/icon
+
 @angular/material/card
 
 @angular/forms
 MIT
+
+@angular/material/chips
+
+@angular/material/button
 
 zone.js
 MIT
