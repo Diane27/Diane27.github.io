@@ -1,11 +1,16 @@
 <div class="project-card-wrapper">
-  <mat-card class="mat-elevation-z2 project-card">
+  <mat-card class="mat-elevation-z2 project-card" [ngStyle]="{'background': 'linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), '+project.color}">
+      <img [src]="project.image" class="project-image">
     <mat-card-header>
       <mat-card-title>{{project.title}}</mat-card-title>
     </mat-card-header>
-    <hr class="card-divider">
     <mat-card-content>
-      <div>{{project.description}}</div>
+      <mat-chip-list [selectable]="false">
+        <mat-chip *ngFor="let tag of project.tags">{{tag}}</mat-chip>
+      </mat-chip-list>
     </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button color="#fff">Details</button>
+    </mat-card-actions>
   </mat-card>
 </div>

@@ -14,3 +14,8 @@
     margin: auto;
     width: 3%;
 }
+.projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
