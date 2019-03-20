@@ -12,9 +12,20 @@
     left: 0;
     color: '#fff'
 }
-
-.white-text  {
+h2, h1, h3 {
+    text-align: center;
     color: #fff;
+}
+
+.icon-group {
+    a {
+        color: #fff;
+        margin: 0 20px;
+    }
+    mat-icon {
+        font-size: 30px;
+        width: 30px;
+    }
 }
 
 .header-name {

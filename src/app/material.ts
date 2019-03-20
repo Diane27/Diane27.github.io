@@ -14,6 +14,7 @@ import {
           MatSidenavModule,
           MatDividerModule,
           MatMenuModule,
+          MatIconRegistry
 } from '@angular/material';
 
 @NgModule({
@@ -47,7 +48,13 @@ import {
     MatIconModule,
     MatSidenavModule,
     MatDividerModule,
-    MatMenuModule
-  ]
+    MatMenuModule,
+  ],
+  providers: [MatIconRegistry]
 })
-export class MaterialModule { }
+export class MaterialModule { 
+  constructor(
+    public matIconRegistry: MatIconRegistry) {
+    matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+  }
+ }

@@ -6,14 +6,17 @@ import { MaterialModule } from './material';
 import { HomeComponent } from './page/home/home.component';
 import { ProjectsComponent } from './page/projects/projects.component';
 import { ProjectComponent } from './component/project/project.component';
+import { ProjectDetailsComponent } from './component/project-details/project-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProjectDetailsComponent
   ],
+  entryComponents: [ProjectDetailsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
     this.projects = [
       {
         title: "Recovery Bot",
-        image: "assets/recovery-bot.jpg",
+        image: "assets/recovery-bot.png",
         tags: ["Microsoft Azure", "Fitbit API", "ChatBot", "NLP"],
         description: "Helps drug addict overcome withdrawal",
         color: 'rgb(0, 208, 132)'
