@@ -21,4 +21,8 @@ export class ProjectDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
+  close(): void {
+    this.dialogRef.close();
+  }
+
 }

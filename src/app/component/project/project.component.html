@@ -1,4 +1,4 @@
-<div class="project-card-wrapper">
+<!-- <div class="project-card-wrapper">
   <mat-card class="mat-elevation-z2 project-card" [ngStyle]="{'background': 'linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), '+project.color}">
       <img [src]="project.image" class="project-image">
     <mat-card-header>
@@ -13,4 +13,23 @@
       <button mat-stroked-button color="#fff" (click)="openDetails()">Details</button>
     </mat-card-actions>
   </mat-card>
+</div> -->
+<div class="project-container">
+  <div class="project-wrapper" [ngClass]="{'left': left == 1, 'right': left == 0}">
+    
+    <div class="project-image">
+      <img [src]="project.image" class="image">
+    </div>
+    <div class="project-details">
+      <h1>{{project.title}}</h1>
+      <P>{{project.description}}</P>
+      <div class='project-read-more'>
+        <p>Check it out </p>
+        <div class='project-links'>
+          <a [href]="project.github" target="_blank"><mat-icon fontSet="fa" fontIcon="fa-github"></mat-icon></a>
+          <a [href]="project.github" target="_blank"><mat-icon svgIcon="devpost"></mat-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,23 @@
+.about-container {
+    background-color: rgba(68, 18, 94,0.1);
+    margin-top: 100vh;
+    height: 60vh;
+    width: 100%;
+}
+.about-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    color: rgb(68, 18, 94);
+}
+.about-body {
+    color: rgb(68, 18, 94);
+    width: 50vw;
+    margin: auto;
+    p {
+        line-height: 2em;
+        letter-spacing: 1.5px;
+    }
+}

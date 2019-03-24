@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {MatDialog} from '@angular/material';
+//import {MatDialog} from '@angular/material';
 import { ProjectDetailsComponent } from '../project-details/project-details.component';
+
 
 @Component({
   selector: 'app-project',
@@ -9,16 +10,17 @@ import { ProjectDetailsComponent } from '../project-details/project-details.comp
 })
 export class ProjectComponent implements OnInit {
   @Input() project;
-  constructor(public dialog: MatDialog) { }
+  @Input() left;
+  constructor() {}
 
   ngOnInit() {
   }
 
-  openDetails(){
-    const dialogRef = this.dialog.open(ProjectDetailsComponent, {
-      width: '500px',
-      data: {project: this.project}
-    });
-  }
+  // openDetails(){
+  //   const dialogRef = this.dialog.open(ProjectDetailsComponent, {
+  //     width: '500px',
+  //     data: {project: this.project}
+  //   });
+  // }
 
 }

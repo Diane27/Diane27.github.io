@@ -14,7 +14,7 @@ import {
           MatSidenavModule,
           MatDividerModule,
           MatMenuModule,
-          MatIconRegistry
+          MatIconRegistry,
 } from '@angular/material';
 
 @NgModule({
@@ -32,7 +32,7 @@ import {
     MatIconModule,
     MatSidenavModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   exports: [
     MatToolbarModule,
