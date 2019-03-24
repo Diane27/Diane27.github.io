@@ -1,19 +1,3 @@
-<!-- <div class="project-card-wrapper">
-  <mat-card class="mat-elevation-z2 project-card" [ngStyle]="{'background': 'linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), '+project.color}">
-      <img [src]="project.image" class="project-image">
-    <mat-card-header>
-      <mat-card-title>{{project.title}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <mat-chip-list [selectable]="false">
-        <mat-chip *ngFor="let tag of project.tags">{{tag}}</mat-chip>
-      </mat-chip-list>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-stroked-button color="#fff" (click)="openDetails()">Details</button>
-    </mat-card-actions>
-  </mat-card>
-</div> -->
 <div class="project-container">
   <div class="project-wrapper" [ngClass]="{'left': left == 1, 'right': left == 0}">
     
@@ -27,7 +11,7 @@
         <p>Check it out </p>
         <div class='project-links'>
           <a [href]="project.github" target="_blank"><mat-icon fontSet="fa" fontIcon="fa-github"></mat-icon></a>
-          <a [href]="project.github" target="_blank"><mat-icon svgIcon="devpost"></mat-icon></a>
+          <a [href]="project.devpost" target="_blank"><mat-icon svgIcon="devpost"></mat-icon></a>
         </div>
       </div>
     </div>

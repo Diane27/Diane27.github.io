@@ -1,7 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-//import {MatDialog} from '@angular/material';
-import { ProjectDetailsComponent } from '../project-details/project-details.component';
-
 
 @Component({
   selector: 'app-project',
@@ -13,14 +10,6 @@ export class ProjectComponent implements OnInit {
   @Input() left;
   constructor() {}
 
-  ngOnInit() {
-  }
-
-  // openDetails(){
-  //   const dialogRef = this.dialog.open(ProjectDetailsComponent, {
-  //     width: '500px',
-  //     data: {project: this.project}
-  //   });
-  // }
+  ngOnInit() {}
 
 }
