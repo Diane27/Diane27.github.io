@@ -10,10 +10,24 @@
     padding-top: 50px;
     color: rgb(68, 18, 94);
 }
-
-.projects-component {
-    display: flex;
-    flex-direction: column
-    //flex-wrap: wrap;
-    //justify-content: space-around;
+.projects-content{
+    margin: 20px auto;
+    max-width: 1100px;
+    // align-content: space-around;
 }
+
+// .projects-component {
+//     display: grid;
+//     grid-template-columns: 70%;
+//     grid-gap: 20px;
+//     grid-auto-flow: row;
+//     justify-content: center;
+//     align-content: space-around;
+// }
+
+// .projects-component {
+//     display: flex;
+//     flex-direction: column;
+//     //flex-wrap: wrap;
+//     //justify-content: space-around;
+// }

@@ -5,7 +5,11 @@
     <span class="dot"></span>
     <span class="dot"></span>
   </div>
-  <div class="projects-component">
-    <app-project *ngFor="let project of projects; let index = index" [project] ="project" [left]="index%2"></app-project>
+  <div class="projects-content">
+    <app-project *ngFor="let project of projects; let index = index" class="projects-component"
+      [project] ="project" 
+      [left]="index%2"
+      >
+    </app-project>
   </div>
 </div>

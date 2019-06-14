@@ -1,5 +1,33 @@
 <div class="project-container">
-  <div class="project-wrapper" [ngClass]="{'left': left == 1, 'right': left == 0}">
+    <div class="project-image"> 
+      <img [src]="project.image" class="image">
+    </div>
+    <div class="project-details">
+      <h1>{{project.title}}</h1>
+      <P>{{project.description}}</P>
+      <div class='project-read-more'>
+        <p>Check it out </p>
+        <div class='project-links'>
+          <a [href]="project.github" target="_blank"><mat-icon fontSet="fa" fontIcon="fa-github"></mat-icon></a>
+          <a [href]="project.devpost" target="_blank"><mat-icon svgIcon="devpost"></mat-icon></a>
+        </div>
+      </div>
+    </div>
+  <!-- <div class="project-image" [ngClass]="{'left': left == 0, 'right': left == 1}">
+      <img [src]="project.image" class="image">
+  </div>
+  <div class="project-details" [ngClass]="{'left': left == 1, 'right': left == 0}">
+    <h1>{{project.title}}</h1>
+    <P>{{project.description}}</P>
+    <div class='project-read-more'>
+      <p>Check it out </p>
+      <div class='project-links'>
+        <a [href]="project.github" target="_blank"><mat-icon fontSet="fa" fontIcon="fa-github"></mat-icon></a>
+        <a [href]="project.devpost" target="_blank"><mat-icon svgIcon="devpost"></mat-icon></a>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="project-wrapper" [ngClass]="{'left': left == 1, 'right': left == 0}">
     
     <div class="project-image">
       <img [src]="project.image" class="image">
@@ -15,5 +43,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>

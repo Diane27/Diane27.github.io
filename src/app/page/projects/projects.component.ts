@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
     this.projects = [
       {
         title: "Recovery Bot",
-        image: "assets/test-image.png",
+        image: "assets/recovery-bot-cover.png",
         tags: ["Microsoft Azure", "Fitbit API", "ChatBot", "NLP"],
         github: 'https://github.com/RecoveryBot',
         devpost: 'https://devpost.com/software/recovery-bot',
@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit {
       },
       {
         title: "Care Buddy",
-        image: "assets/test-image.png",
+        image: "assets/carebuddy-cover.png",
         tags: ["GCP", "Image Recognition", "Chat", "Health"],
         github: 'https://github.com/Diane27/HackDavis2019',
         devpost: 'https://devpost.com/software/carebuddy',
@@ -31,12 +31,12 @@ export class ProjectsComponent implements OnInit {
       },
       //(247, 141, 167)
       {
-        title: "EmergAlert",
-        image: "assets/test-image.png",
-        tags: ["Microsoft Azure", "Twilio API", "Image Recognition"],
-        github: 'https://github.com/EmergAlert',
-        devpost: 'https://devpost.com/software/emergalert-gq3yva',
-        description: "A digital platform that recognizes emergencies and gives immediate responses. EmergAlert analyzes the footage from security cameras frame-by-frame for the possibility of someone possessing a gun in the school ground. It then sends an alert through text if a threatening shooter is detected.",
+        title: "Autism Care",
+        image: "assets/autism-care-cover.png",
+        tags: ["Microsoft Azure", "sentimen analysis", "Image Recognition"],
+        github: 'https://github.com/athenahacks19',
+        devpost: 'https://devpost.com/software/autism-app',
+        description: "A digital platform that helps parents of children with autism, while also improving the lives of the children themselves. Inspired by the Autism awareness month, this app ",
         color: 'rgb(22, 136, 254)'
       },
     ]
