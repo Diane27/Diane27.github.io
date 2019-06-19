@@ -1,4 +1,6 @@
 .about-container {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(68, 18, 94,0.1);
     margin-top: 100vh;
     padding-bottom: 30px;
@@ -15,7 +17,8 @@
 .about-body {
     color: rgb(68, 18, 94);
     display: grid;
-    width: 50vw;
+    max-width: 600px;
+    padding: 0 30px;
     margin: auto;
     p {
         line-height: 2em;
