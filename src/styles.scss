@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow: none;
+    margin: 0;
+}
+
+.header-rule {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    .dot {
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(68, 18, 94);
+        border-radius: 50%;
+    }
+    width: 8%;
+}

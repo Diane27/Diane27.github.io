@@ -1,0 +1,15 @@
+<div class="projects-container">
+  <h2 class="projects-header">Projects</h2>
+  <div class = "header-rule">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <div class="projects-content">
+    <app-project *ngFor="let project of projects; let index = index" class="projects-component"
+      [project] ="project" 
+      [left]="index%2"
+      >
+    </app-project>
+  </div>
+</div>
