@@ -20,6 +20,17 @@ h2, h1, h3 {
     
 }
 
+.icon-group {
+    a {
+        color: #fff;
+        margin: 0 20px;
+    }
+    mat-icon {
+        font-size: 30px;
+        width: 30px;
+    }
+}
+
 .header-name {
     font-size: 60px;
     font-weight: 50px;
